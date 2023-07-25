@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root {
+    --font-principal:'Montserrat', sans-serif;
+}
+
+
+
+.rodape {
+    background: #CAFFCC;    
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:center;     
+    font-family: var(--font-principal);   
+}
+
+.rodape-principal{
+    display: flex;    
+    gap: 15em;    
+}
+
+.rodape-logo-senac {
+    width: 130px;
+    height: 74px;
+    margin-left: 50px;
+}
+
+.rodape-texto {
+    font-size: 1.5em;
+    margin: auto 0;
+}
+
+.rodape-copy {
+    position: absolute;
+    left: auto;
+    bottom: 10px;
+}
