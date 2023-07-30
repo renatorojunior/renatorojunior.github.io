@@ -1,0 +1,106 @@
+/* Keyframes Animações */
+@keyframes deslizarCima {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes deslizarDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes deslizarEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes deslizarBaixo {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes flutuarImagem {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100% {        
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotacionarBorda {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes homeTexto {
+    0%, 
+    10%, 
+    100% {
+        background-position: -26rem 0;
+    }
+    65%, 
+    85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorTexto {
+    0%, 
+    10%, 
+    100% {
+        width: 0;
+    }
+    65%, 
+    78%,
+    85% {
+        width: 100%;
+        opacity: 1;
+    }
+    75%,
+    81% {
+        opacity: 0;
+    }
+}
