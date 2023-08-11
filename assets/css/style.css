@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 :root {
     --font-principal:'Poppins', sans-serif;
-    --font-secundaria: 'Berkshire Swash', cursive;
+    --font-secundaria: 'Montserrat', sans-serif;
     --cor-primaria: #01120a;
     --cor-secundaria: #D1E8D8;
     --cor-terciaria: #3D942F;
@@ -99,7 +98,7 @@ body {
 }
 
 .home-conteudo-principal {
-    max-width: 600px;
+    max-width: 50%;
     margin-left: -50px;    
 }
 
@@ -133,7 +132,7 @@ body {
 .cursor {
     display: inline-block;
     width: 3px;
-    background-color: #ccc;
+    background-color: var(--cor-secundaria);
     margin-left: 0.1rem;
     animation: homeCursorTexto 1s infinite;
 }
@@ -348,11 +347,10 @@ body {
 }
 
 .foto img {
-    position: absolute;
-    top: 30px;
+    position: absolute;    
     left: 50%;
     transform: translateX(-50%);
-    max-width: 350px;
+    max-width: 100%;
     object-fit: cover;     
 } 
 
@@ -408,8 +406,9 @@ body {
 
 .sobre_container .sobre_sobre_mim .sobre_titulo h1 {
     font-size: 2.2rem;
-    color: var(--cor-quartenaria);   
-    font-family: 'Berkshire Swash', cursive;
+    font-family: var(--font-secundaria);
+    font-weight: 800;
+    color: var(--cor-quartenaria);    
     margin-bottom: 12px;
 }
 
@@ -418,7 +417,7 @@ body {
     position: relative;
 }
 
-.sobre_container .sobre_sobre_mim .sobre_titulo p::after {
+.sobre_container .sobre_sobre_mim .sobre_titulo span {
     background-color: var(--cor-quartenaria);
     height: 6px;
     width: 60px;

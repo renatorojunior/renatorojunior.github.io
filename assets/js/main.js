@@ -76,24 +76,29 @@ sr.reveal('.sobre_titulo p', {
     delay: 700          // Atraso da animação em milissegundos
 });
 
+sr.reveal('.sobre_titulo span', {
+    origin: 'right',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
 sr.reveal('.sobre_texto h1', {
-    origin: 'right',     // Origem da animação
-    delay: 900          // Atraso da animação em milissegundos
-});
-
-sr.reveal('.sobre_texto', {
-    origin: 'right',     // Origem da animação
-    delay: 900          // Atraso da animação em milissegundos
-});
-
-sr.reveal('.mais', {
     origin: 'right',     // Origem da animação
     delay: 1100          // Atraso da animação em milissegundos
 });
 
+sr.reveal('.sobre_texto', {
+    origin: 'right',     // Origem da animação
+    delay: 1300          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.mais', {
+    origin: 'right',     // Origem da animação
+    delay: 1500          // Atraso da animação em milissegundos
+});
+
 sr.reveal('.sobre_info p', {
     origin: 'bottom',     // Origem da animação
-    delay: 1300        // Atraso da animação em milissegundos
+    delay: 1700        // Atraso da animação em milissegundos
 });
 
 // Aplicando o efeito de revelação na seção "Educação"
