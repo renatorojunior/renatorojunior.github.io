@@ -6,52 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/animation.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/style.css">        
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Portfólio | Renato Rodrigues</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <div>
-            <a class="cabecalho-logo"><strong>Port</strong>fólio.</a>
-            <nav class="cabecalho-menu">
-                <ul>
-                    <li>
-                        <a href="./index.html" style="--i:1;" class="menu-home">Home</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" style="--i:2;" class="menu-sobre">Sobre Mim</a>
-                    </li>
-                    <li>
-                        <a href="./skills.html" style="--i:3;" class="menu-habilidades">Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="./experiencia.html" style="--i:4;" class="menu-experiencias">Experiências</a>
-                    </li>
-                    <li>
-                        <a href="./contato.html" style="--i:5;" class="menu-contato">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>        
+    <header class="cabecalho">        
+        <a class="logo"><strong>Port</strong>fólio.</a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home" style="--i:1;" class="ativo">Home</a></li>
+                <li><a href="#sobre-mim" style="--i:2;" class="">Sobre Mim</a></li>
+                <li></li><a href="#educacao" style="--i:3;" class="">Educação</a></li>
+                <li><a href="#ehabilidades" style="--i:4;" >Habilidades</a></li>
+                <li><a href="#contato" style="--i:5;" class="">Contato</a></li>
+            </ul>
+        </nav>             
     </header>
-    <main class="home">        
-        <section class="home-conteudo">
+
+    <main class="conteudo"> 
+        
+        <!-- Desenvolvimento da Home do Projeto -->
+        
+        <section class="home" id="home">
             <div class="home-icones">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/renatorojunior/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/renatorojunior" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/renatorojr/" target="_blank"><i class='bx bxl-facebook'></i></a>
             </div>
             <div class="home-conteudo-principal">                
                 <div class="home-descricao">
                     <h3>Olá, muito prazer!</h3>
-                    <h1>Me chamo Renato Rodrigues.</h1>
-                    <h2>Desenvolvedor WEB</h2>
+                    <h1>Me chamo Renato Rodrigues.</h1>                    
+                    <h2><span class="text"></span><span class="cursor">&nbsp;</span></h2>
                     <p>Sou graduado em Engenharia e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Universidade Santa Cecília - UNISANTA. Possuo conhecimentos em HTML, Javascript, CSS, C#, ASP.NET MVC, SQL Server e MySQL.</p>
                     <a href="#" class="btn-cv">Download CV</a>
-                    <a href="#" class="btn-contrate">Contrate-me</a>
+                    <a href="https://wa.me/5513981591569" class="btn-contate" target="_blank">Contate-me</a>
                 </div>   
             </div>
             <div class="home-img">
@@ -64,7 +55,51 @@
                 </div>
             </div>
         </section>
+
+        <!-- Desenvolvimento do página Sobre mim -->
+
+        <section aria-label="Seção sobre mim" class="sobre" id="sobre-mim">
+            <div class="sobre_conteudo">
+                <img src="./assets/img/foto-sobre.png" class="foto_sobre" alt="Imagem do Renato Rodrigues.">
+    
+                <div class="sobre_container">
+                    <div class="sobre_sobre_mim">
+                        <div class="sobre_titulo">
+                            <h1>Sobre Mim</h1>
+                            <p>Perfil Profissional</p> 
+                        </div>
+    
+                        <div class="sobre_texto">
+                            <h1>Olá, meu nome é Renato Rodrigues.</h1>
+                            <p>Meu interesse pela área de Tecnologia começou ainda na adolescência. Eu adorava criar jogos utilizando um "Motor de Jogos" chamado RPG Maker. As possibilidades eram limitadas ao que a própria solução disponibilizava, o que me levou a buscar mais sobre desenvolvimento de jogos, e foi aí que conheci o JavaScript.
+                            <br><br>
+                            Comecei a estudar programação, desenvolvendo pequenos jogos em 2D e replicando jogos antigos e famosos, como o Snake Game. Entretanto, por questões relacionadas à escolha de uma carreira, acabei optando por fazer engenharia, o que me levou a concentrar meus esforços na faculdade e deixar um pouco de lado as questões relacionadas à TI. Dentro da própria grade curricular da graduação, tive contato com a linguagem C, no conteúdo programático de MatLab, o que reacendeu a chama em mim pelo desenvolvimento de software.
+                            <br><br>
+                            Após concluir a faculdade, decidi me dedicar ainda mais à área de programação. Comecei a estudar front-end utilizando HTML, CSS e aprofundando meus conhecimentos em JavaScript aplicado ao desenvolvimento Web. Posteriormente, influenciado por um amigo, iniciei meus estudos em C#, o que me levou ao desenvolvimento Web através do ASP.Net MVC e a aprender sobre bancos de dados.
+                            <br><br>
+                            Essa jornada fez eu me apaixonar de vez pela área de Tecnologia, e em virtude disso, decidi me dedicar ainda mais aos estudos e focar na transição de carreira. Hoje sou formado em Engenharia e estou prestes a me formar em Análise e Desenvolvimento de Sistemas. Estou ansioso para seguir essa paixão e atuar profissionalmente na área de desenvolvimento de software.                        
+                            </p>
+                        </div>
+                        <a class="mais"></a>                    
+    
+                        <div class="sobre_info">
+                            <p><i class='bx bxs-flag-alt'></i>Nacionalidade: Brasileira</p>
+                            <p><i class='bx bx-globe'></i>Idiomas: Português (Nativo) e Inglês</p>
+                            <p><i class='bx bxs-location-plus'></i>Endereço: Santos/SP, Brazil</p>
+                            <p><i class='bx bxs-phone-call'></i>Telefone: +55 (13) 9 8159-1569</p>
+                            <p><i class='bx bxs-calendar'></i></i>Data de Nascimento: 18/02/1993</p>
+                            <p><i class='bx bxl-gmail'></i>E-mail: renato.rojunior@gmail.com</p>                           
+                        </div>
+                    </div>                
+                </div>            
+            </div>        
+        </section>    
+        
+        <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+        <script src="main.js"></script>  
+
     </main>
+
     <footer class="rodape">
         <section class="rodape-principal">
             <div class="rodape-logo">
@@ -78,6 +113,7 @@
         <div class="rodape-copy">
             <p>Copyright © 2023.</p>
         </div>        
-    </footer>    
+    </footer> 
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -88,19 +88,9 @@
 }
 
 @keyframes homeCursorTexto {
-    0%, 
-    10%, 
-    100% {
-        width: 0;
-    }
-    65%, 
-    78%,
-    85% {
-        width: 100%;
-        opacity: 1;
-    }
-    75%,
-    81% {
-        opacity: 0;
-    }
+    0% {background-color: #ccc;}
+    49% {background-color: #ccc;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: #ccc;}
 }

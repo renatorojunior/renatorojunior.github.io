@@ -1,5 +1,0 @@
-.cabecalho-menu .menu-habilidades, 
-.cabecalho-menu a:hover {
-    color: var(--cor-terciaria);
-    transition: .3s ease;        
-}
