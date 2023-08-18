@@ -405,31 +405,55 @@ body {
 }
 
 .sobre_container .sobre_sobre_mim .sobre_titulo h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-family: var(--font-secundaria);
-    font-weight: 800;
-    color: var(--cor-quartenaria);    
+    font-weight: 800;      
     margin-bottom: 12px;
+}
+
+.sobre_container .sobre_sobre_mim .sobre_titulo h1 b {
+    color: var(--cor-quartenaria);  
 }
 
 .sobre_container .sobre_sobre_mim .sobre_titulo p {    
     font-size: 1.2rem;    
     position: relative;
+    margin-bottom: 1.5rem;
 }
 
 .sobre_container .sobre_sobre_mim .sobre_titulo span {
     background-color: var(--cor-quartenaria);
     height: 6px;
     width: 60px;
-    margin: 16px 0;
+    margin: 1.5rem 0;
     content: '';
     display: block;
     border-radius: 5px;
 }
 
+.sobre_container .sobre_sobre_mim .sobre_info {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: .5rem;
+    align-items: center;
+    padding-bottom: 1.2rem;
+}
+
+.sobre_container .sobre_sobre_mim .sobre_info i {
+    color: var(--cor-quartenaria);
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+
+.sobre_container .sobre_sobre_mim .sobre_info p {
+    font-size: .9rem;
+}
+
 .sobre_container .sobre_sobre_mim .sobre_texto {
     position: relative;
-    height: 250px;
+    height: 360px;
     overflow: hidden;    
 }
 
@@ -443,7 +467,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 160px;
     background: linear-gradient(transparent, var(--cor-primaria));
 }
 
@@ -501,24 +525,112 @@ body {
     content: 'Leia Menos ▲';
 }
 
-.sobre_container .sobre_sobre_mim .sobre_info {
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/-1;
-    gap: 10px;
+/* Educação */
+
+.education {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    min-height: 100vh;    
+    background-size: cover;
+    background-position: center;    
+    padding: 70px 10% 0;
+    font-family: var(--font-principal);    
 }
 
-.sobre_container .sobre_sobre_mim .sobre_info i {
+.education h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-secundaria);
+    font-weight: 800;   
+    padding-bottom: 4rem;
+}
+
+.education span {
     color: var(--cor-quartenaria);
-    display: inline-block;
-    padding-right: 15px;
-    font-size: 1.5rem;
 }
 
-.sobre_container .sobre_sobre_mim .sobre_info p {
-    font-size: .9rem;
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column {
+    flex: 1 1 30rem;
+}
+
+.education-column .title {
+    font-size:  2rem;
+    font-weight: 500;
+    margin: 0 0 2rem 2rem;
+}
+
+.education-column .education-box {
+    border-left: .2rem solid var(--cor-quartenaria);
+}
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--cor-quartenaria);;
+    border-radius: 50%;
+}
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border:  .2rem solid var(--cor-quartenaria);;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.education-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0c3305;
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .content:hover::before {
+    width: 100%;
+}
+
+.education-content .content .year {
+    font-size: 1.2rem;
+    color: var(--cor-quartenaria);;
+    padding-bottom: .5rem;
+}
+
+.education-content .content .year i {
+    padding-right: .5rem;
+}
+
+.education-content .content h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.education-content .content p {
+    font-size: 1rem;
+    padding-top: .3rem;
+    line-height: 1.5rem;
 }
 
 /* Rodapé */

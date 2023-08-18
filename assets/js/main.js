@@ -86,22 +86,80 @@ sr.reveal('.sobre_texto h1', {
     delay: 1100          // Atraso da animação em milissegundos
 });
 
-sr.reveal('.sobre_texto', {
+sr.reveal('.sobre_info', {
     origin: 'right',     // Origem da animação
-    delay: 1300          // Atraso da animação em milissegundos
+    delay: 1300        // Atraso da animação em milissegundos
 });
 
-sr.reveal('.mais', {
+sr.reveal('.sobre_texto', {
     origin: 'right',     // Origem da animação
     delay: 1500          // Atraso da animação em milissegundos
 });
 
-sr.reveal('.sobre_info p', {
+sr.reveal('.mais', {
     origin: 'bottom',     // Origem da animação
-    delay: 1700        // Atraso da animação em milissegundos
+    delay: 1700          // Atraso da animação em milissegundos
 });
 
+
 // Aplicando o efeito de revelação na seção "Educação"
+
+sr.reveal('.heading', {
+    origin: 'top',     // Origem da animação
+    delay: 300          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.title-education', {
+    origin: 'left',     // Origem da animação
+    delay: 600          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.title-experience', {
+    origin: 'right',     // Origem da animação
+    delay: 600          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.box-right', {
+    origin: 'left',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.box-left', {
+    origin: 'right',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+
+sr.reveal('.education-top', {
+    origin: 'left',     // Origem da animação
+    delay: 1200          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.experience-top', {
+    origin: 'right',     // Origem da animação
+    delay: 1200          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.education-mid', {
+    origin: 'left',     // Origem da animação
+    delay: 1500          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.experience-mid', {
+    origin: 'right',     // Origem da animação
+    delay: 1500          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.education-bottom', {
+    origin: 'left',     // Origem da animação
+    delay: 1800          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.experience-bottom', {
+    origin: 'right',     // Origem da animação
+    delay: 1800          // Atraso da animação em milissegundos
+});
+
 
 // **************************************************************************
 
