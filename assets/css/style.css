@@ -399,7 +399,7 @@ body {
 .sobre_container .sobre_sobre_mim {
     position: relative;
     width: 100%;
-    padding: 20px;    
+    padding: 20px 20px 20px 10%;    
 }
 
 .sobre_container .sobre_sobre_mim .sobre_titulo {    
@@ -643,17 +643,18 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 5% 0;
 }
 
 .certificados h1 {
     font-size: 2.5rem;
     font-family: var(--font-secundaria);
-    font-weight: 800;     
+    font-weight: 800;         
 }
 
 .certificados h1 span {
@@ -941,4 +942,33 @@ body {
     text-align: center;
     bottom: 10px;
 }
+
+/* SCROLL UP */
+.scrollup{
+    position: fixed;
+    background: var(--cor-terciaria);
+    right: 2.5rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: .3rem;
+    border-radius: .25rem;
+    z-index: 10;
+    opacity: .8;
+    transition: .4s;
+  }
+  
+  .scrollup__icon{
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+  }
+  
+  .scrollup:hover{
+    background: var(--cor-terciaria);
+    opacity: 1;
+  }
+  
+  /* Mostrar Scroll Up*/
+  .show-scroll{
+    bottom: 3rem;
+  }
 
