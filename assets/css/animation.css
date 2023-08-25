@@ -75,22 +75,11 @@
     }
 }
 
-@keyframes homeTexto {
-    0%, 
-    10%, 
+@keyframes mostrarBotão {
+    0% {
+        opacity: 0;        
+    }
     100% {
-        background-position: -26rem 0;
+        opacity: 1;       
     }
-    65%, 
-    85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorTexto {
-    0% {background-color: #ccc;}
-    49% {background-color: #ccc;}
-    50% {background-color: transparent;}
-    99% {background-color: transparent;}
-    100% {background-color: #ccc;}
 }

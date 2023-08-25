@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // **************************************************************************
-
 // Função "Leia Mais"
 
 let lerMais = document.querySelectorAll('.mais');
@@ -49,7 +48,6 @@ for(let i=0; i < lerMais.length; i++){
 }
 
 // **************************************************************************
-
 // Scroll Reveal
 
 const sr = ScrollReveal({
@@ -168,7 +166,6 @@ sr.reveal('.slider-container', {
 
 
 // ***************************************************************************
-
 // Carrossel
 
 const repeat = false;
@@ -399,7 +396,6 @@ function goToIndexSlide(index) {
 slideInitial();
 
 // ***************************************************************************
-
 // Mostrar SCROLL UP
  
 function scrollUp(){
