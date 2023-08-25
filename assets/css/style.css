@@ -8,6 +8,7 @@
     --cor-secundaria: #D1E8D8;
     --cor-terciaria: #3D942F;
     --cor-quartenaria: #70E05E;
+    --cor-quintenaria: #01180a;
     --time: 500ms;
     --delay: var(--time) / 2;
     --mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);    
@@ -912,14 +913,14 @@ body {
     align-items: center;  
     text-align: center;  
     min-height: 100vh;       
-    padding: 70px 10% 0;
+    padding: 70px 15% 0;
 }
 
 .contact h1 {
     font-size: 2.5rem;
     font-family: var(--font-secundaria);
     font-weight: 800;
-    margin-top: 50px;       
+    margin-top: 40px;       
 }
 
 .contact span {
@@ -929,8 +930,8 @@ body {
 .contact-container {   
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
-    margin: 100px 0;
+    gap: 4rem;
+    margin-top: 60px;    
 }
 
 .my-contacts { 
@@ -957,7 +958,7 @@ body {
     width: 300px;
     align-content: center;
     height: 160px;
-    background-color: #01180a;
+    background-color: var(--cor-quintenaria);
 }
 
 .my-contacts ul li i {
@@ -1022,13 +1023,16 @@ body {
 .contact-form {    
     flex: 1 1 25rem;
     text-align: center;
+    background-color: var(--cor-quintenaria);
+    padding: 2rem;
+    border-radius: .5rem;
 }
 
 .contact-form h2 {
     font-family: var(--font-secundaria);
     font-size: 2rem;
     color: var(--cor-quartenaria);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;    
 }
 
 .contact-form h3 {    
@@ -1065,7 +1069,7 @@ body {
     padding: 5px 0;
     font-size: 1rem;
     color: var(--cor-secundaria);
-    background-color: var(--cor-primaria);
+    background-color: transparent;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--cor-terciaria);
@@ -1073,6 +1077,7 @@ body {
 
 .input-box textarea {
     height: 240px;
+    font-family: var(--font-principal);
 }
 
 .input-box span {
@@ -1106,17 +1111,16 @@ body {
     height: 48px;     
     font-size: 1.2em;
     background: var(--cor-terciaria);
-    color: var(--cor-primaria);    
+    color: var(--cor-quintenaria);    
     border: 2px solid var(--cor-terciaria);
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;      
-    margin-top: 2rem;
-    opacity: 0;
+    margin-top: 2rem;    
     z-index: 1;
     overflow: hidden;
-    animation: mostrarBotão 0s ease forwards; 
+    
 }
 
 .btn-enviar::before {
@@ -1127,7 +1131,7 @@ body {
     width: 0;
     height: 100%;
     border-radius: 5px;
-    background: var(--cor-primaria);
+    background: var(--cor-quintenaria);
     background-size: 200%;
     background-position: 0 0;
     z-index: -1;
@@ -1156,6 +1160,7 @@ body {
     font-weight: 300;  
     flex-direction: column; 
     position: relative;
+    margin-top: 100px;
 }
 
 .rodape-principal{
@@ -1185,7 +1190,7 @@ body {
     bottom: 10px;
 }
 
-/* SCROLL UP */
+/* Botão Scroll Up */
 .scrollup{
     position: fixed;
     background: var(--cor-terciaria);
