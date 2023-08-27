@@ -163,7 +163,94 @@ sr.reveal('.slider-container', {
     delay: 500          // Atraso da animação em milissegundos
 });
 
+// Aplicando o efeito de revelação na seção "Habilidades"
 
+sr.reveal('.hard-skills', {
+    origin: 'left',     // Origem da animação
+    delay: 600          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.soft-skills', {
+    origin: 'right',     // Origem da animação
+    delay: 600          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.bar:nth-child(1)', {
+    origin: 'left',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.bar:nth-child(2)', {
+    origin: 'left',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.bar:nth-child(3)', {
+    origin: 'left',     // Origem da animação
+    delay: 1500          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.bar:nth-child(4)', {
+    origin: 'left',     // Origem da animação
+    delay: 1200          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.bar:nth-child(5)', {
+    origin: 'left',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.radial-bar:nth-child(1)', {
+    origin: 'right',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.radial-bar:nth-child(2)', {
+    origin: 'right',     // Origem da animação
+    delay: 1150          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.radial-bar:nth-child(3)', {
+    origin: 'right',     // Origem da animação
+    delay: 1300          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.radial-bar:nth-child(4)', {
+    origin: 'right',     // Origem da animação
+    delay: 1500          // Atraso da animação em milissegundos
+});
+
+// Aplicando o efeito de revelação na seção "Contatos"
+
+sr.reveal('.my-contacts ul li:nth-child(1)', {
+    origin: 'left',     // Origem da animação
+    delay: 600          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.my-contacts ul li:nth-child(2)', {
+    origin: 'left',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.my-contacts ul li:nth-child(3)', {
+    origin: 'left',     // Origem da animação
+    delay: 900          // Atraso da animação em milissegundos
+});
+
+sr.reveal('iframe', {
+    origin: 'left',     // Origem da animação
+    delay: 600          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.contact-form', {
+    origin: 'right',     // Origem da animação
+    delay: 800          // Atraso da animação em milissegundos
+});
+
+sr.reveal('.btn-enviar', {
+    origin: 'right',     // Origem da animação
+    delay: 1200          // Atraso da animação em milissegundos
+});
 
 // ***************************************************************************
 // Carrossel
@@ -394,6 +481,30 @@ function goToIndexSlide(index) {
 }
 
 slideInitial();
+
+// ***************************************************************************
+// Seções - Navbar Scroll
+
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 20;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset & top < offset + height) {
+
+        navLinks.forEach(links => {
+                links.classList.remove('ativo');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('ativo');
+        });
+        }
+    });
+}
+
 
 // ***************************************************************************
 // Mostrar SCROLL UP
