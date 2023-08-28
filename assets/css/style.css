@@ -141,6 +141,10 @@ body {
     animation: homeCursorTexto 1s infinite;
 }
 
+.cursor.typing {
+    animation: none;
+}
+
 .home p {
     font-size: 1em;
     margin: 20PX 0 40PX;
